@@ -1,29 +1,39 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <style>
-  #a{
-    background-color:red;
-    width:200px;
-    height:100px;
-  }
-  #b{
-    background-color:yellow;
-    width:150px;
-    height:100px;
-    transform:skewy(30deg) translateX(200px);
-  }
-  #c{
-    background-color:green;
-    width:200px;
-    height:150px;
-    transform:skewX(30deg) translateY(-150px);
-  }
-  </style>
-</head>
 <body>
-  <div id=a></div>
-  <div id=b></div>
-  <div id=c></div>
+<style>
+#a {
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    transform: skewx(50deg);
+    position: absolute;
+    left: 150px;
+    top: 50px;
+}
+
+#b {
+    background-color: pink;
+    width: 115px;
+    height: 200px;
+    transform: skewy(40deg);
+    position: absolute;
+    left: 90px;
+    top:98px;
+}
+
+#c {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 205px;
+    top: 150px;
+}
+</style>
+<div>
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+</div>
 </body>
 </html>
